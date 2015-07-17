@@ -8,13 +8,15 @@ The hashtag allows users to filter information and at the same time re-randomize
 # Requirements
 
 - Firefox 38+
+
 - JPM (https://www.npmjs.com/package/jpm)
-- 
 
 
 
 # Run, Test, and Pack
 
 run: jpm run -b tweety
+
 test: jpm test tweety
+
 pack xpi: jpm xpi
