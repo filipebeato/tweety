@@ -1,0 +1,12 @@
+{
+  "title": "Tweety Addon",
+  "name": "tweety",
+  "version": "0.0.1",
+  "description": "A basic add-on",
+  "main": "index.js",
+  "author": "Filipe",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT"
+}

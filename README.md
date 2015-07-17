@@ -1,1 +1,20 @@
-# tweety
+# Tweety Firefox Add-on
+
+Tweety is a novel, tailored, and secure system for privacy in Twitter, based on tweakable blockciphers and Sponge functions. Tweety guarantees semantic security while complying with the commonly imposed space restrictions and allowing limited targeted advertisement.
+
+The hashtag allows users to filter information and at the same time re-randomize the ciphertext.
+
+
+# Requirements
+
+- Firefox 38+
+- JPM (https://www.npmjs.com/package/jpm)
+- 
+
+
+
+# Run, Test, and Pack
+
+run: jpm run -b tweety
+test: jpm test tweety
+pack xpi: jpm xpi
