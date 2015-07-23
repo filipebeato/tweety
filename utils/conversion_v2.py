@@ -51,6 +51,7 @@ for i in chars:
         bits.append(temp)
         
 # Check that the reconstructed bitstring is equal to the original
+# when interpreted as a number
 print int(bits.hex[2:],16) == r
     
 
