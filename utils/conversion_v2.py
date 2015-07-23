@@ -43,6 +43,7 @@ def decode(val,bitsperchar,numchars):
         chars.append(ord(i))
         #print ord(i)
         
+<<<<<<< HEAD
     # Reconstruct the original bitstream from the Unicode code points
     bits = BitStream()
     for i in chars:
@@ -61,6 +62,12 @@ if __name__ == '__main__':
     # Parameters #
     bitsperchar = 16 # How many bits in one utf-8 character do we want
     numchars = 140 # Number of characters
+=======
+# Check that the reconstructed bitstring is equal to the original
+# when interpreted as a number
+print int(bits.hex[2:],16) == r
+    
+>>>>>>> 135e479ec1257fcae4a8dc40f9b61fe3f2cc93ef
 
     # Testing #
     r = random.getrandbits(bitsperchar*numchars)

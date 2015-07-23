@@ -1,10 +1,21 @@
 <html>
 <head>
     <style type="text/css" media="all">
-      textarea {
+      
+       #tweetbox {
         margin: 20px;
         display: inline-block;
+        min-height: 100px;
         line-height: 18px;
+      }
+
+      #tweetpwdbox {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 2px;
+        min-height: 5px;
+        line-height: 18px;
+        vertical-align: middle;
       }
 
       .btn {
@@ -30,12 +41,16 @@
   <body>
     <script src="tweetybox.js"></script>
     <div>
-      <textarea id="tweetbox" cols="35" maxlength="140" placeholder="What's happening?"></textarea>
+      <textarea id="tweetbox" row="6" cols="37" maxlength="140" placeholder="What's happening?"></textarea>
     </div>
-    <div style="margin-top: 10px; margin-right: 20px;"> 
-      <div style="float:right"> 
-        <button class="btn" data-original-title="Tweet">Tweet(y) it!</button> 
-      </div> 
+    <div style="margin-top: 10px; margin-right: 30px;"> 
+        <input id="tweetpwdbox" type="password"  placeholder="password!"></input>        
+        <span style="margin-left: 10px; min-height: 5px;">
+          <img id="tweetypwdbox-button" src='imgs/pwdshow-icon-16.png' align="middle" width="16px">
+        </span>
+        <span style="float:right"> 
+          <button id="tweetyit-button" class="btn" data-original-title="Tweet">Tweet(y) it!</button> 
+        </span>
     </div>
   </body>
 </html>
