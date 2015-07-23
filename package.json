@@ -2,11 +2,14 @@
   "title": "Tweety Addon",
   "name": "tweety",
   "version": "0.0.1",
-  "description": "A basic add-on",
-  "main": "index.js",
-  "author": "Filipe",
+  "description": "Tweety Add-on: Sharing secrets in Twitter",
+  "main": "tweety.js",
+  "author": "Filipe Beato",
+  "contributors": ["Filipe Beato", "Kimmo Halunen", "Bart Mennink"],
   "engines": {
     "firefox": ">=38.0a1"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "icon": "data/imgs/tweety-icon-32.png",
+  "icon64": "data/imgs/tweety-icon-64.png"
 }
