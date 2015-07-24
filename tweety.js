@@ -8,8 +8,8 @@
 // Define the dependencies (this can also be done in package.json)
 var { ToggleButton } = require("sdk/ui/button/toggle");
 var data = require("sdk/self").data;
-var convert = require("./convertor.js");
-var tweetycipher = require("./tweetycipher.js")
+var convert = require("./lib/convertor.js");
+var tweetycipher = require("./lib/tweetycipher.js")
 
 
 /**
