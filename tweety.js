@@ -8,8 +8,12 @@
 // Define the dependencies (this can also be done in package.json)
 var { ToggleButton } = require("sdk/ui/button/toggle");
 var data = require("sdk/self").data;
-var convert = require("./convertor.js");
-var tweetycipher = require("./tweetycipher.js")
+// var convert = require("./convertor.js");
+// var tweetycipher = require("./tweetycipher.js")
+
+
+// Create Buttons and Panels
+// ---------------------------------------------------------
 
 
 /**
@@ -40,8 +44,14 @@ var panel = require("sdk/panel").Panel({
     onHide: handleHide
 });
 
+
+
+// Handlers
+// ---------------------------------------------------------
+
+
 /**
-*  Create a Toggle Button
+*  Tweety Toggle Button onClick Handler
 *  @public
 */
 function handleToggleChange(state) {
@@ -51,7 +61,25 @@ function handleToggleChange(state) {
     });
   }
 }
-
+/**
+*  Tweety Toggle Button onHide Handler
+*  @public
+*/
 function handleHide() {
   tweetyButton.state('window', {checked: false});
 }
+
+
+
+// Listeners
+// ---------------------------------------------------------
+
+var pageMod = require("sdk/page-mod");
+pageMod.PageMod({
+  include: "*.twitter.com",
+  contentScriptFile: [data.url("jquery-1.11.3.min.js"),
+                      data.url("tweetyparser.js")]
+});
+
+
+
