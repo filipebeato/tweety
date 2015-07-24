@@ -15,7 +15,7 @@ The hashtag allows users to filter information and at the same time re-randomize
 
 # Run, Test, and Pack
 
-run: jpm run tweety / to run on a specific firefox profile: jpm run -p <profile_name> tweety 
+run: jpm run tweety / to run on a specific firefox profile: jpm run -p [profile_name] tweety 
 
 test: jpm test tweety
 
