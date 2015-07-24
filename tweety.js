@@ -8,12 +8,17 @@
 // Define the dependencies (this can also be done in package.json)
 var { ToggleButton } = require("sdk/ui/button/toggle");
 var data = require("sdk/self").data;
+<<<<<<< HEAD
 // var convert = require("./convertor.js");
 // var tweetycipher = require("./tweetycipher.js")
 
 
 // Create Buttons and Panels
 // ---------------------------------------------------------
+=======
+var convert = require("./lib/convertor.js");
+var tweetycipher = require("./lib/tweetycipher.js")
+>>>>>>> a602af652ac5e7b40391bd244c333731cb7097f7
 
 
 /**
