@@ -10,7 +10,7 @@ var { ToggleButton } = require("sdk/ui/button/toggle");
 var data = require("sdk/self").data;
 
 // var convert = require("./convertor.js");
-// var tweetycipher = require("./tweetycipher.js")
+var tweetycipher = require("lib/tweetycipher.js")
 
 // Create Buttons and Panels
 // ---------------------------------------------------------

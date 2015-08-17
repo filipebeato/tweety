@@ -63,9 +63,9 @@ if __name__ == '__main__':
     bitsperchar = 16 # How many bits in one utf-8 character do we want
     numchars = 140 # Number of characters
 
-# Check that the reconstructed bitstring is equal to the original
-# when interpreted as a number
-# print int(bits.hex[2:],16) == r
+    # Check that the reconstructed bitstring is equal to the original
+    # when interpreted as a number
+    # print int(bits.hex[2:],16) == r
 
 
     # Testing #
